@@ -100,14 +100,14 @@ namespace ComboBox
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(299, 57);
+            this.kryptonPanel1.Size = new System.Drawing.Size(299, 97);
             this.kryptonPanel1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 57);
+            this.ClientSize = new System.Drawing.Size(299, 97);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

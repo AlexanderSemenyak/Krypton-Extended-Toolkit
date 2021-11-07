@@ -48,7 +48,7 @@
                         MessageBoxIcon = ExtendedKryptonMessageBoxIcon.INFORMATION
                     };
 
-                    manager.DisplayKryptonMessageBox();
+                    //manager.DisplayKryptonMessageBox();
 
                     e.Cancel = true;
                 }
