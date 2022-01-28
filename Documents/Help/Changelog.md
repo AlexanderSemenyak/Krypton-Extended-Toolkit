@@ -7,6 +7,7 @@
 * Nightly packages are now available both on GitHub and nuget.org
 * Reworked the `Toast` module (RTL support coming soon!)
 * Updated NuGet package descriptions to provide more information
+* Removed examples from source, you can find the example source code [here](https://github.com/Krypton-Suite/Extended-Toolkit-Demos)
 * Fix errant typos
 * Updated standard toolkit to build `2204`
 
