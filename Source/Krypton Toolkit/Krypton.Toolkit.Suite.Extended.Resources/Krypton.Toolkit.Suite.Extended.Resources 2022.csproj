@@ -50,7 +50,7 @@
 		  </PropertyGroup>
 
 		  <ItemGroup>
-			  <PackageReference Include="Krypton.Toolkit.Canary" Version="60.22.1.23-beta" />
+			  <PackageReference Include="Krypton.Toolkit.Canary" Version="60.22.1.29-beta" />
 		  </ItemGroup>
 	  </When>
 
