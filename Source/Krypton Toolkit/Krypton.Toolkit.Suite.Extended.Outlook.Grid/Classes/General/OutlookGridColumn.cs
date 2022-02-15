@@ -65,6 +65,24 @@ namespace Krypton.Toolkit.Suite.Extended.Outlook.Grid
             RowsComparer = comparer;
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="columnName">The name.</param>
+        /// <param name="col">The DataGridViewColumn.</param>
+        /// <param name="group">The group type for the column.</param>
+        /// <param name="sortDirection">The sort direction.</param>
+        /// <param name="groupIndex">The column's position in grouping and at which level.</param>
+        /// <param name="sortIndex">the column's position among sorted columns.</param>
+        public OutlookGridColumn(string columnName, DataGridViewColumn col, IOutlookGridGroup group, SortOrder sortDirection, int groupIndex, int sortIndex)
+        {
+            DataGridViewColumn = col;
+            Name = columnName;
+            GroupingType = group;
+            SortDirection = sortDirection;
+            GroupIndex = groupIndex;
+            SortIndex = sortIndex;
+        }
         #endregion
 
         #region Properties

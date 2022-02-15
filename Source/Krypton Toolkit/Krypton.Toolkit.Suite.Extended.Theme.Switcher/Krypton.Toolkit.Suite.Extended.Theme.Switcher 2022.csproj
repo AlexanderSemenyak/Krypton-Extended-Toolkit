@@ -10,7 +10,7 @@
         <AssemblyName>Krypton.Toolkit.Suite.Extended.Theme.Switcher</AssemblyName>
         <UseWindowsForms>true</UseWindowsForms>
         <NeutralLanguage>en</NeutralLanguage>
-        <Configurations>Debug;Release;Nightly;Canary;Stable</Configurations>
+        <Configurations>Debug;Release;Nightly;Canary;Stable;Signed</Configurations>
     </PropertyGroup>
 
     <!--Package Data-->
@@ -24,6 +24,12 @@
 		<When Condition="'$(Configuration)' == 'Nightly'">
 			<PropertyGroup>
 				<PackageId>Krypton.Toolkit.Suite.Extended.Theme.Switcher.Nightly</PackageId>
+			</PropertyGroup>
+		</When>
+
+		<When Condition="'$(Configuration)' == 'Signed'">
+			<PropertyGroup>
+				<PackageId>Krypton.Toolkit.Suite.Extended.Theme.Switcher.Signed</PackageId>
 			</PropertyGroup>
 		</When>
 		<Otherwise>
@@ -51,9 +57,9 @@
             </PropertyGroup>
 
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit.Canary" Version="60.22.1.29-beta" />
+                <PackageReference Include="Krypton.Toolkit.Canary" Version="60.22.2.41-beta" />
 
-                <PackageReference Include="Krypton.Navigator.Canary" Version="60.22.1.29-beta" />
+                <PackageReference Include="Krypton.Navigator.Canary" Version="60.22.2.41-beta" />
             </ItemGroup>
         </When>
 
@@ -63,20 +69,32 @@
 			</PropertyGroup>
 
 			<ItemGroup>
-				<PackageReference Include="Krypton.Toolkit.Nightly" Version="60.22.1.26-alpha" />
+				<PackageReference Include="Krypton.Toolkit.Nightly" Version="60.22.2.41-alpha" />
 
-				<PackageReference Include="Krypton.Navigator.Nightly" Version="60.22.1.26-alpha" />
+				<PackageReference Include="Krypton.Navigator.Nightly" Version="60.22.2.41-alpha" />
 			</ItemGroup>
 		</When>
+
+	    <When Condition="'$(Configuration)' == 'Signed'">
+		    <PropertyGroup>
+			    <LangVersion>preview</LangVersion>
+		    </PropertyGroup>
+
+		    <ItemGroup>
+			    <PackageReference Include="Krypton.Toolkit.Signed" Version="60.22.4.4" />
+
+			    <PackageReference Include="Krypton.Navigator.Signed" Version="60.22.4.4" />
+		    </ItemGroup>
+	    </When>
         <Otherwise>
             <PropertyGroup>
                 <LangVersion>preview</LangVersion>
             </PropertyGroup>
 
             <ItemGroup>
-                <PackageReference Include="Krypton.Toolkit" Version="6.2201.4" />
+                <PackageReference Include="Krypton.Toolkit" Version="60.22.2.32" />
 
-                <PackageReference Include="Krypton.Navigator" Version="6.2201.4" />
+                <PackageReference Include="Krypton.Navigator" Version="60.22.2.32" />
             </ItemGroup>
         </Otherwise>
     </Choose>

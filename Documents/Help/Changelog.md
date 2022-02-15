@@ -1,6 +1,10 @@
 =======
 
 ## 2022-04-04 - Build 2204 - April 2022
+* Implemented [#290](https://github.com/Krypton-Suite/Extended-Toolkit/issues/290), `KryptonOutlookGridGroupBox` 'CreateGroupBox' method not found
+* New `Krypton.Toolkit.Suite.Extended.Networking` module
+* Moved `KryptonPanelExtended` & `KryptonButtonPanel` to `Krypton.Toolkit.Suite.Extended.Panels` module
+* Added `Signed` configuration
 * Resolved [#268](https://github.com/Krypton-Suite/Extended-Toolkit/issues/268), Crashes using Outlook Grid control
 * Resolved [#226](https://github.com/Krypton-Suite/Extended-Toolkit/issues/226), `KryptonOutlookGrid` throws a `MissingManifestResourceException` when trying to configure its columns
 * The `ThemeSelector` now uses the native `KryptonThemeComboBox` control
@@ -13,7 +17,12 @@
 
 =======
 
-## 2022-02-03 - Build 2202 - February 2022
+## 2022-02-02 - Build 2202.1 - February 2022
+* Resolved [#299](https://github.com/Krypton-Suite/Extended-Toolkit/issues/299), Toolkit used is the wrong version
+
+=======
+
+## 2022-02-01 - Build 2202 - February 2022
 * Updated NuGet package information to aid deployment to GitHub
 * New `Krypton.Toolkit.Suite.Extended.Error.Reporting` module
 * Removal of unused 'using' statements
@@ -193,3 +202,4 @@
 * Changed `490` to `500`
 * Builds from now on will be labelled as `YYMM`
 * ***Before installing, please follow [this](https://github.com/Krypton-Suite/Standard-Toolkit-Online-Help/blob/master/Source/Documentation/Standard%20Toolkit%20Migration%20Guide.md) as the toolkit now uses different namespaces!***
+ module
