@@ -9,7 +9,7 @@
 	<Target Name="Clean">
 		<ItemGroup>
 			<!--Library Projects-->
-			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\*.csproj" />
+			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\*.csproj" />
 		</ItemGroup>
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Clean" />
 	</Target>
@@ -17,7 +17,7 @@
 	<Target Name="Restore">
 		<ItemGroup>
 			<!--Library Projects-->
-      <Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\*.csproj" />
+      <Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\*.csproj" />
 		</ItemGroup>
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Restore" />
 	</Target>
@@ -25,7 +25,7 @@
 	<Target Name="Build" DependsOnTargets="Restore">
 		<ItemGroup>
 			<!--Library Projects-->
-      <Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\*.csproj" />
+      <Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\*.csproj" />
 		</ItemGroup>
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" />
 	</Target>
@@ -40,14 +40,14 @@
 	<Target Name="PackLite">
 		<ItemGroup>
 			<!--Toolkit Projects-->
-			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\*.csproj" />
+			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\*.csproj" />
 		</ItemGroup>
 	<ItemGroup>	
 			<!--Toolkit Projects-->
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.json" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.cache" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.g.targets" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.g.props" />			
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.json" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.cache" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.g.targets" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.g.props" />			
 		</ItemGroup>
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Clean" />
 		<Delete Files="@(NugetAssets)" />
@@ -58,14 +58,14 @@
 	<Target Name="PackAll">
 		<ItemGroup>
 			<!--Toolkit Projects-->
-			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\*.csproj" />
+			<Projects Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\*.csproj" />
 		</ItemGroup>
 	<ItemGroup>
 			<!--Toolkit Projects-->
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.json" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.cache" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.g.targets" />
-			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.*\obj\*.g.props" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.json" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.cache" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.g.targets" />
+			<NugetAssets Include="$(RootFolder)\Source\Krypton Toolkit\Krypton.Toolkit.Suite.Extended.*\obj\*.g.props" />
 		</ItemGroup>
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Clean" />
 		<Delete Files="@(NugetAssets)" />
