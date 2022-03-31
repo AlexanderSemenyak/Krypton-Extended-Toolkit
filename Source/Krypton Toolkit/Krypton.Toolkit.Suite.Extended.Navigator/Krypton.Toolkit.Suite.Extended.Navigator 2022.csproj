@@ -94,9 +94,9 @@
 								    </PropertyGroup>
 
 								    <ItemGroup>
-									    <PackageReference Include="Krypton.Toolkit.Signed" Version="60.22.4.4" />
+									    <PackageReference Include="Krypton.Toolkit.Signed" Version="65.22.4.94" />
 									    
-									    <PackageReference Include="Krypton.Navigator.Signed" Version="60.22.4.4" />
+									    <PackageReference Include="Krypton.Navigator.Signed" Version="65.22.4.94" />
 								    </ItemGroup>
 							    </When>
 							    <Otherwise>
@@ -105,9 +105,9 @@
 								    </PropertyGroup>
 
 								    <ItemGroup>
-									    <PackageReference Include="Krypton.Toolkit" Version="60.22.2.32" />
+									    <PackageReference Include="Krypton.Toolkit" Version="65.22.4.94" />
 									    
-									    <PackageReference Include="Krypton.Navigator" Version="60.22.2.32" />
+									    <PackageReference Include="Krypton.Navigator" Version="65.22.4.94" />
 								    </ItemGroup>
 							    </Otherwise>
 						    </Choose>
